@@ -6,7 +6,7 @@ const { Meta } = Card;
 const ExperiencedJob = () => {
     const [experiencedJobs, setExperiencedJobs] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/ExperiencedJobs')
+        fetch('https://job-portal-server-seven.vercel.app/ExperiencedJobs')
             .then(res => res.json())
             .then(data => setExperiencedJobs(data))
     }, []);
@@ -34,7 +34,7 @@ const ExperiencedJob = () => {
                                     <h4 className='text-lg font-bold'><span className='text-blue-600'>Position Name :</span> {ExperiencedJob.PositionName}</h4>
                                     <h4><span className='text-blue-600'>Company Name :</span> {ExperiencedJob.CompanyName}</h4>
                                     <h4><span className='text-blue-600'>Job Location :</span> {ExperiencedJob.JobLocation}</h4>
-                                    <button className='bg-info p-2 rounded-md ml-20 mt-8 hover:bg-primary'><Link to='/successful'>Apply Now</Link></button>
+                                    <button className='bg-info p-2 rounded-md ml-20 mt-8 hover:bg-primary'><Link to='Application/'>Apply Now</Link></button>
                                 </Card>
                             </div>)
                         }

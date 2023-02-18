@@ -6,7 +6,7 @@ const { Meta } = Card;
 const FresherJob = () => {
     const [fresherJobs, setFresherJobs] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/FresherJobs')
+        fetch('https://job-portal-server-seven.vercel.app/FresherJobs')
             .then(res => res.json())
             .then(data => setFresherJobs(data))
     }, []);
@@ -34,7 +34,7 @@ const FresherJob = () => {
                                     <h4 className='text-lg font-bold'><span className='text-blue-600'>Position Name :</span> {fresherJob.PositionName}</h4>
                                     <h4><span className='text-blue-600'>Company Name :</span> {fresherJob.CompanyName}</h4>
                                     <h4><span className='text-blue-600'>Job Location :</span> {fresherJob.JobLocation}</h4>
-                                    <button className='bg-info p-2 rounded-md ml-20 mt-8 hover:bg-primary'>Apply Now</button>
+                                    <button className='bg-info p-2 rounded-md ml-20 mt-8 hover:bg-primary'><Link to='Application/'>Apply Now</Link></button>
                                 </Card>
                             </div>)
                         }

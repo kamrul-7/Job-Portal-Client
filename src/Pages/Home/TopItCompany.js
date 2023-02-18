@@ -6,7 +6,7 @@ const { Meta } = Card;
 const TopItCompany = () => {
     const [TopItCompanys, setTopItCompanys] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/TopItCompany')
+        fetch('https://job-portal-server-seven.vercel.app/TopItCompany')
             .then(res => res.json())
             .then(data => setTopItCompanys(data))
     }, []);
