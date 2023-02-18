@@ -13,7 +13,7 @@ const FresherJob = () => {
 
     let count = 0;
     return (
-        <div>
+        <div className='mb-20'>
             <div className='text-center mb-4'>
                 <p className="text-2xl lg:text-6xl font-bold text-orange-600 lg:my-12"><Wave text="Fresher Jobs" />
                 </p>
@@ -42,7 +42,7 @@ const FresherJob = () => {
                 }
             </div>
             <div className='card-actions justify-center mt-6'>
-                <Link to='/product'><button className="bg-secondary p-2 rounded-md hover:bg-green-400 px-12">Show More</button></Link>
+                <Link to='/FresherAllJobs'><button className="bg-secondary p-2 rounded-md hover:bg-green-400 px-12">Show More</button></Link>
             </div>
         </div >
     );
@@ -51,18 +51,3 @@ const FresherJob = () => {
 export default FresherJob;
 
 
-
-// import { Card } from 'antd';
-// const { Meta } = Card;
-// const FresherJob = () => (
-//     <Card
-//         hoverable
-//         style={{
-//             width: 240,
-//         }}
-//         cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
-//     >
-//         <Meta title="Europe Street beat" description="www.instagram.com" />
-//     </Card>
-// );
-// export default FresherJob;

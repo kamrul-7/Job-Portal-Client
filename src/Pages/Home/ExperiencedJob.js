@@ -13,9 +13,9 @@ const ExperiencedJob = () => {
 
     let count = 0;
     return (
-        <div>
+        <div className='mb-20'>
             <div className='text-center mb-4'>
-                <p className="text-2xl lg:text-6xl font-bold text-orange-600 lg:my-12"><Wave text="Experienced Jobs" />
+                <p className="text-2xl lg:text-6xl font-bold text-blue-600 lg:my-12"><Wave text="Experienced Jobs" />
                 </p>
             </div>
             <div className='grid gap-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
@@ -34,7 +34,7 @@ const ExperiencedJob = () => {
                                     <h4 className='text-lg font-bold'><span className='text-blue-600'>Position Name :</span> {ExperiencedJob.PositionName}</h4>
                                     <h4><span className='text-blue-600'>Company Name :</span> {ExperiencedJob.CompanyName}</h4>
                                     <h4><span className='text-blue-600'>Job Location :</span> {ExperiencedJob.JobLocation}</h4>
-                                    <button className='bg-info p-2 rounded-md ml-20 mt-8 hover:bg-primary'>Apply Now</button>
+                                    <button className='bg-info p-2 rounded-md ml-20 mt-8 hover:bg-primary'><Link to='/successful'>Apply Now</Link></button>
                                 </Card>
                             </div>)
                         }
@@ -42,7 +42,7 @@ const ExperiencedJob = () => {
                 }
             </div>
             <div className='card-actions justify-center mt-6'>
-                <Link to='/product'><button className="bg-secondary p-2 rounded-md hover:bg-green-400 px-12">Show More</button></Link>
+                <Link to='/ExperienceAllJobs'><button className="bg-secondary p-2 rounded-md hover:bg-green-400 px-12">Show More</button></Link>
             </div>
         </div >
     );
@@ -52,17 +52,3 @@ export default ExperiencedJob;
 
 
 
-// import { Card } from 'antd';
-// const { Meta } = Card;
-// const ExperiencedJob = () => (
-//     <Card
-//         hoverable
-//         style={{
-//             width: 240,
-//         }}
-//         cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
-//     >
-//         <Meta title="Europe Street beat" description="www.instagram.com" />
-//     </Card>
-// );
-// export default ExperiencedJob;
