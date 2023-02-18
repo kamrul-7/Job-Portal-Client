@@ -43,7 +43,7 @@ const router = createBrowserRouter([
                 element: <PrivateRoute><FresherAllJobs></FresherAllJobs></PrivateRoute>
             },
             {
-                path: '/Application',
+                path: '/application',
                 element: <PrivateRoute><Application></Application> </PrivateRoute>
             },
             {
